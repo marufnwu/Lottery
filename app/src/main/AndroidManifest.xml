@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lutt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lutt"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ui.YesVsPreActivity" />
+        <activity
+            android:name=".ui.YesterdayResultActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ui.Winning_NumbersActivity" />
+        <activity
+            android:name=".ui.TodayResultActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ui.To_Get_HelpActivity" />
+        <activity android:name=".ui.SPL_Or_BumperActivity" />
+        <activity android:name=".ui.OldResultActivity" />
+        <activity android:name=".ui.Claim_formActivity" />
+        <activity android:name=".Your_Lucky_NumbersActivity" />
+        <activity android:name=".Fst_Prize_WinnersActivity" />
+        <activity android:name=".Today_Number_CheckActivity" />
+        <activity android:name=".stady" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
